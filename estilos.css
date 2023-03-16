@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+/* Estilos del navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1242E4;
+    color: #fff;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+  
+.navbar h1 {
+	font-size: 1.5em;
+	margin: 0;
+	text-align: center;
+	flex-grow: 1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 0.5em;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.navbar li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilos del menú vertical */
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5em;
+    background-color: #1242E4;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    z-index: 1;
+}
+  
+.menu-toggle button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+  
+.menu {
+	margin-top: 60px; /* Agregar margen superior */
+	display: none;
+	background-color: #f2f2f2;
+	padding: 1em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: calc(100% - 40px); /* Restar el margen superior de la altura */
+	overflow-y: scroll; /* Agregar barra de desplazamiento vertical */
+}
+  
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0.5em 0;
+    color: #fff
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #0DA106;
+}
+
+.menu h2 {
+    color: #fff
+}
+
+/* Estilos del contenido */
+.contenido {
+	padding: 1em;
+	width: 60%; /* 30% de la orilla izquierda y 20% de la derecha */
+	margin-left: 30%;
+	margin-right: 10%;
+	float: right;
+}
+  
+.menu.mostrar {
+    display: block;
+}
+
+.menu-toggle-close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+  
+.menu-toggle-close button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Estilos para encapsular el menú */
+.contenedor-menu {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #001D61;
+    width: 20%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
