@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #CBF1B4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +20,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1242E4;
+    background-color: #FB8D00;
     color: #fff;
     padding: 1em;
     position: relative;
@@ -61,7 +62,7 @@ p {
     align-items: center;
     justify-content: flex-start;
     padding: 0.5em;
-    background-color: #1242E4;
+    background-color: #FB8D00;
     position: fixed;
     top: 1em;
     left: 1em;
@@ -88,6 +89,7 @@ p {
 	width: 20%;
 	height: calc(100% - 40px); /* Restar el margen superior de la altura */
 	overflow-y: scroll; /* Agregar barra de desplazamiento vertical */
+    color:aqua;
 }
   
 .menu ul {
@@ -107,11 +109,11 @@ p {
 }
 
 .menu li a:hover {
-    color: #0DA106;
+    color: #87DE43;
 }
 
 .menu h2 {
-    color: #fff
+    color: #F3FA00;
 }
 
 /* Estilos del contenido */
