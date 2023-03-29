@@ -3,7 +3,7 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
-    background-color: #92999e;
+    background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +21,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #001D61;
+    background-color: #103a9b;
     color: #fff;
     padding: 1em;
     position: relative;
@@ -44,6 +44,7 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
+    background-color: #fff;
 }
 
 .navbar li {
@@ -54,6 +55,7 @@ p {
     color: #fff;
     text-decoration: none;
     padding: 0.5em;
+    color: black
 }
 
 .navbar li a:hover {
@@ -67,7 +69,7 @@ p {
     align-items: center;
     justify-content: flex-start;
     padding: 0.5em;
-    background-color: #001D61;
+    background-color: #103a9b;
     position: fixed;
     top: 1em;
     left: 1em;
@@ -130,7 +132,7 @@ p {
 	margin-right: 10%;
 	float: right;
 }
-  
+
 .menu.mostrar {
     display: block;
 }
@@ -167,7 +169,7 @@ p {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #001D61;
+    background-color: #103a9b;
     width: 20%;
     height: 100%;
     overflow-y: scroll;
@@ -180,3 +182,17 @@ p {
 .menu::-webkit-scrollbar-thumb {
     background-color: #333;
 }
+
+
+    #parpadeo {
+        animation: cambiaColor 5s infinite;
+    }
+    
+    @keyframes cambiaColor {
+        0% {color: red;}
+        25% {color: green;}
+        50% {color: yellow;}
+        75% {color: darkviolet;}
+        100% {color: pink;}
+    }
+
