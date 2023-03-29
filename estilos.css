@@ -183,16 +183,15 @@ p {
     background-color: #333;
 }
 
-
-    #parpadeo {
-        animation: cambiaColor 5s infinite;
-    }
+#parpadeo {
+    animation: cambiaColor 5s infinite;
+}
     
-    @keyframes cambiaColor {
-        0% {color: red;}
-        25% {color: green;}
-        50% {color: yellow;}
-        75% {color: darkviolet;}
-        100% {color: pink;}
-    }
+@keyframes cambiaColor {
+    0% {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: darkviolet;}
+    100% {color: pink;}
+}
 
